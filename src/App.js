@@ -1,14 +1,10 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Routess } from './config'
 import { useState,useEffect } from "react";
 
 function App() {
   return (
-    <Router>
-      <div className='App'>
-        HALOOO
-      </div>
-    </Router>
+    <Routess />
   );
 }
 

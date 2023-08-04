@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import './admin.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReserveCard from "../../components/reserve_admin/reserve-card";
+import Scanner from "../../components/reserve_admin/scanner";
 
 
 const Admin = () => {
@@ -30,6 +31,10 @@ const Admin = () => {
 
                 <Col md={5} className="border">
                     <h1 className="text-center">QR Scanner</h1>
+                    <Row>
+                        <Scanner />
+                    </Row>
+
                 </Col>
             </Row>
         </Container>

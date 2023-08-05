@@ -1,8 +1,8 @@
-import image from './img.png'
+import image from './pic/img.png'
 import './Reservation.css';
 import { useState } from 'react';
 
-function App() {
+function Reservation() {
   const [count, setCount] = useState(0);
   var price = 2000;
   var distance = 520;
@@ -69,4 +69,4 @@ function App() {
   );
 }
 
-export default App;
+export default Reservation;

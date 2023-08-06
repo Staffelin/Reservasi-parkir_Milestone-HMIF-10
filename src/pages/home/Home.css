@@ -56,7 +56,7 @@
     width: 0px;
 }
 
-.card{
+.content-card{
     margin: auto;
 }
 
@@ -70,6 +70,7 @@
 }
 
 .content-box{
+    cursor: pointer;
     gap: 20px;
     display: flex;
     width: 350px;
@@ -95,7 +96,7 @@
 }
 
 .info-value{
-    color: #FFF;
+    color: #50555C;
     text-align: center;
     font-family: "Montserrat";
     font-size: 24px;

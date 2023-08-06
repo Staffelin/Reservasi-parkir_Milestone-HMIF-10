@@ -1,13 +1,22 @@
 import axios from "axios";
 
 function addData(newData,url) {
-    console.log(newData, url)
     axios.post(url, newData)
         .then(response => {
             console.log(response.data.message); // Response message from the API
         })
         .catch(error => {
             console.error(error);
+        });
+}
+
+function editDataById(newData,url,id) {
+    axios.put(url+"/"+id, newData)
+        .then(response => {
+        console.log(response.data.message); // Response message from the API
+        })
+        .catch(error => {
+        console.error(error);
         });
 }
 
@@ -20,6 +29,13 @@ function addData(newData,url) {
 // }
 // addData(newdata,url)
 
-// NANTI TINGGAL DI IMPORT FUNCTION addData ke manapun
+// const updateddata={ //Ubah yang mau diubah misal car dan bike ga perlu tulis lagi id nya
+//     car:20,
+//     bike:20
+// }
+// misal mau ubah parkir saraga yang id nya 3
+// editDataById(updateddata,"https://parkir-api.vercel.app/data/park",3)
 
-export{addData}
+// NANTI TINGGAL DI IMPORT FUNCTION addData & editDataById ke manapun
+
+export{addData,editDataById}

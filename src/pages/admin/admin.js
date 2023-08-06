@@ -10,7 +10,7 @@ const Admin = () => {
     return (
         <Container fluid>
             <Row>
-                <Col md={7} className="border">
+                <Col md={{span:5, offset:1}} className="border">
                     <h1 className="text-center">Reserve</h1>
                     <Row>
                         <Col>
@@ -29,9 +29,9 @@ const Admin = () => {
                     </Row>
                 </Col>
 
-                <Col md={5} className="border">
+                <Col md={{span:4, offset:2}} className="border">
                     <h1 className="text-center">QR Scanner</h1>
-                    <Row>
+                    <Row className="p-5">
                         <Scanner />
                     </Row>
 

@@ -7,25 +7,21 @@ const Scanner = () => {
     useEffect(() => {
         const scanner = new Html5QrcodeScanner('reader', {
             qrbox:{
-                width:400,
-                height:400
+                width:250,
+                height:250
             },
-            fps: 1,
+            fps: 3,
         });
 
         
-        const success = (result) => {
+        const onSuccess = (result) => {
             console.log(result)
             setScanResult(result);
         }
         
-        const error = (err) => {
-            console.warn(err);
-        }
-        
-        scanner.render(success, error);
+        scanner.render(onSuccess);
     },[]);
-
+    
     return (
         <div id="reader"></div>
     )

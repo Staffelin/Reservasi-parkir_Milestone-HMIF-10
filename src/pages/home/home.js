@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import "./Home.css"
+import Loading from "../../components/loading/Loading"
 
 const Home = () =>{
     const [Park,setPark]=useState([])
@@ -17,7 +18,7 @@ const Home = () =>{
     const Card = () =>{
         return Park.map((park)=>{
             return(
-                <div className="card">
+                <div className="content-card">
                     <label className="content-label">{park.name}</label>
                     <div className="content-box" style={{backgroundColor: crowd(park.car,park.bike)}}>
                         <div><img className="content-img" src={park.url_img}/></div>
@@ -39,12 +40,6 @@ const Home = () =>{
         else{
             return "#F50000"
         }
-    }
-
-    const Loading =()=>{
-        return(
-            <p>Loading...</p>
-        )
     }
 
     return(

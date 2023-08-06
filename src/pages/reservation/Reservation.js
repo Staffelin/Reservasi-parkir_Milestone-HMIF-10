@@ -1,4 +1,4 @@
-import image from './pic/img.png'
+import image from './../../assets/img.png'
 import './Reservation.css';
 import { useState } from 'react';
 

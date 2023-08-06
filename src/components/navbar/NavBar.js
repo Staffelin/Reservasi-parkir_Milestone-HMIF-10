@@ -1,9 +1,9 @@
 import './Navbar.css';
 import { useState } from 'react';
-import homepic from "./pic/Home.svg"
-import settingspic from "./pic/Vector.svg"
-import tutorialpic from "./pic/menu.svg"
-import helppic from "./pic/Help.svg"
+import homepic from "./../../assets/Home.svg"
+import settingspic from "./../../assets/Vector.svg"
+import tutorialpic from "./../../assets/menu.svg"
+import helppic from "./../../assets/Help.svg"
 
 const Navbar = () =>{
     return(

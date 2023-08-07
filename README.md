@@ -1,10 +1,10 @@
-1. Deskripsi singkat masalah dan solusi yang diangkat
+Deskripsi singkat masalah dan solusi yang diangkat
 
 	Masalah mencari lahan parkir yang sulit dan memakan banyak waktu merupakan permasalahan yang sering dihadapi di perkotaan, terutama dalam kota-kota dengan tingkat kepadatan penduduk yang tinggi. Keterbatasan lahan parkir yang tidak seimbang dengan jumlah kendaraan pribadi yang terus meningkat menjadi penyebab utama masalah ini. Hal ini membuat pengendara seringkali harus menghabiskan waktu yang cukup lama untuk mencari tempat parkir yang tersedia. Hal ini tidak hanya menyebabkan ketidaknyamanan, kemacetan, dan menghambat produktivitas dan efisiensi dalam kegiatan sehari-hari terutama di daerah pusat bisnis, perbelanjaan, atau fasilitas umum lainnya. Contoh pada lingkungan ITB Kampus Ganesha. Karena ketersediaan lahan parkir yang terbatas dan maraknya mahasiswa yang membawa kendaraan pribadi, masalah mencari tempat parkir menyebabkan terbuangnya waktu sehingga mahasiswa menjadi terlambat untuk memasuki kelas.
 
 	Untuk mengatasi permasalahan ini, kelompok sepuluh ingin membuat suatu sistem reservasi parkir yang berisi informasi jumlah lahan parkir kosong dan teknologi reservasi parkir digital. Dimana sebelum mahasiswa pergi ke kampus, mereka dapat mereservasi satu lahan parkir untuk kendaraan pribadi mereka secara digital. Hal ini bertujuan untuk mengurangi jumlah mahasiswa terlambat akibat kesulitan mengetahui informasi jumlah lahan parkir kosong. 
 
-2. Requirement program dan instalasi
+Requirement program dan instalasi
 
 	Kelompok 10 menyelesaikan masalah ini dengan membuat sebuah website yang berguna untuk reservasi parkir secara online. Website ini harus menunjukkan jumlah lahan yang tersisa (kosong) dan memiliki fitur dimana pengguna dapat langsung mereservasi lahan tersebut sebelum ia berpergian ke suatu tempat. 
 
@@ -17,7 +17,7 @@
 5. Run di http://localhost:3000/ -> npm run start
 
 
-3. Cara menggunakan program
+Cara menggunakan program
 
 1. Buka website reservasi parkir
 2. Login -> input email dan password
@@ -28,7 +28,7 @@
 7. Jumlah tempat parkir akan berkurang 1
 8. Keluar
 
-4. Identitas pembuat beserta kontribusinya
+Identitas pembuat beserta kontribusinya
 
 - Kerlyn Deslia Andeskar (19622005) = Powerpoint
 - Farel Winalda (19622033) = Homepage - Parkspot - Navigation Bar - Source code

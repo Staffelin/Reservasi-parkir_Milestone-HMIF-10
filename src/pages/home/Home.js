@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import "./Home.css"
-import Loading from "../../components/loading/Loading";
-import Navbar from './../../components/navbar/NavBar';
-import {Routes, Route, useNavigate} from 'react-router-dom';
-import { addData,editDataById } from "../../function";
+import Loading from "../../components/loading/Loading"
+import NavBar from './../../components/navbar/NavBar';
+import Reservation from "../reservation/Reservation";
+import {useNavigate} from 'react-router-dom';
 
 const Home = () =>{
     const [Park,setPark]=useState([])
@@ -18,18 +18,16 @@ const Home = () =>{
             .catch(error => console.error(error));
     }, []);
 
-    const navigate = useNavigate();
-
-    const navigateToReservation = () => {
-        navigate('./../../reservation/');
-
-    };
-
     const Card = () =>{
+        const navigate = useNavigate()
+        const getClickData = (park) => {
+            navigate('/reservation', { state: { parkData: park } });
+          };
+
         return Park.map((park)=>{
             return(
-                <div className="content-card" onClick={navigateToReservation}>
-                    <label className="content-label" id="parkname">{park.name}</label>
+                <div className="content-card" key={park.id} onClick={() => getClickData(park)}>
+                    <label className="content-label">{park.name}</label>
                     <div className="content-box" style={{backgroundColor: crowd(park.car,park.bike)}}>
                         <div><img className="content-img" src={park.url_img}/></div>
                         <div className="info">Car<div className="info-value">{park.car}</div></div>
@@ -52,13 +50,9 @@ const Home = () =>{
         }
     }
 
-    function getLocation(id){
-        const parkLoc = 
-        document.getElementById("parkname").value = parkLoc
-    }
-
     return(
         <div>
+            <NavBar/>
             <div className="profilebox">
                 <div className="profile-img"><img className="profile"/></div>
                 <div><input className="search" type="text" placeholder="Search"></input></div>
@@ -67,6 +61,7 @@ const Home = () =>{
                 <Card/>
             </div>
             {isLoading && (<Loading/>)}
+            {/* <Reservation Park={Park}/> */}
         </div>
     )
 }

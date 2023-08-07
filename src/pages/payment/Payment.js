@@ -3,7 +3,7 @@ import "./Payment.css"
 import Loading from "../../components/loading/Loading";
 import Navbar from './../../components/navbar/NavBar';
 import {Routes, Route, useNavigate} from 'react-router-dom';
-import Balance from './../../assets/Balance.png';
+import Balance from './../../assets/img.png';
 
 function Payment() {
     const navigate = useNavigate();

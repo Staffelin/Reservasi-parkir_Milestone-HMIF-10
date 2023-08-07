@@ -26,16 +26,16 @@ Untuk proses instalasi, kelompok kami membuat website ini secara komunal. Proses
 8. Keluar
 
 **Identitas pembuat beserta kontribusinya**
-- Kerlyn Deslia Andeskar (19622005) = Powerpoint - membantu memperbaiki ReadME bagian deskripsi singkat masalah dan solusi
+- Kerlyn Deslia Andeskar (19622005) = Mengerjakan PPT - Memperbaiki ReadME (bagian deskripsi singkat masalah dan solusi) - Merapikan ReadME
 - Farel Winalda (19622033) = Homepage - Parkspot - Navigation Bar - Source code
 - Agil Fadillah Sabri (19622103) = Register
 - Zachary Samuel Tobing (19622151) = Metode pembayaran
 - Muhammad Dava Fathurahman (19622160) = Admin - Source code
 - Daffa Ramadhan Elengi (19622161) = Booking Parkir - Source code
 - Muhammad Raihan Ariffianto (19622174)  = Register - Source code
-- Eleanor Cordelia (19622182) = Pembuat ReadME - Powerpoint
+- Eleanor Cordelia (19622182) = Pembuat ReadME - Mengerjakan PPT
 - Marvin Scifo Yehezkiel Hutahaean (19622184) = Homepage - Parkspot - Navigation bar - Source code
-- Matthew Nicholas Gunawan (19622211) = Powerpoint
-- Melissa Trenggono (19622237) = Powerpoint
+- Matthew Nicholas Gunawan (19622211) = Mengerjakan PPT
+- Melissa Trenggono (19622237) = Mengerjakan PPT
 - Ahmad Rafi Maliki (19622252) = QR - Source code
 - Nicholas Raymond Sihite (19622298) = Login - Source code

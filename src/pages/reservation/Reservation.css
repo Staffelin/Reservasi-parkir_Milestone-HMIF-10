@@ -1,19 +1,23 @@
-* {
-  /* border: 0.5px solid black; */
-  box-sizing: border-box;
+.reservation-box {
+  margin-top: 150px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.reservation-title{
+  text-align: center;
 }
 
 .Description {
+  gap: 10px;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 30px;
-}
-
-.Description__value {
-  display: flex;
-  align-items: center;
-  margin: 0px auto 0px auto;
-  padding: 0px 5% 0px 5%;  
 }
 
 .Description img {
@@ -21,10 +25,31 @@
 }
 
 .desc-left {
-  margin: auto 5% auto auto;
-  width: auto;
+  width: 160px;
+  height: 120px;
 }
 
+.desc-right{
+  width: 180px;
+}
+
+.description-title{
+  color: #2A2D31;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p{
+  color: #50555C;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 .Reservation {
   align-items: center;
@@ -33,27 +58,52 @@
   margin-bottom: 10px;
 }
 
+.arrival-title{
+  margin-top: 50px;
+  color: #4B4B4B;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .reservation-time {
   margin: 5px;
 }
 
 .Details {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   bottom: 50px;
   width: 100%;
   padding: 20px 0;
 }
 
 .details-attribute {
-  display: flex;
-  align-items: center;
   margin-top: 100px;
 }
 
-.Details div {
-  margin: auto;
+.Details div p{
+  color: #50555C;
   text-align: center;
-  width: 400px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Details div p b{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .radio {
@@ -85,22 +135,25 @@
   background: #e50e0e;
 }
 
-button {
-  display: flex;
-  margin: auto auto auto;
-}
 
 .button {
-  text-decoration: none;
-  color: white;
-  background-color: #e50e0e;
-  font-weight: bold;
-  padding: 10px 100px 15px 100px;
-  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 50px;
+  border-radius: 20px;
+  background: #FF2A2A;
   border: none;
+  color: #F6F6F6;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
 }
 
 .button:hover {
-  text-decoration: none;
-  cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(255, 0, 0, 0.25);
 }

@@ -1,14 +1,15 @@
-import image from './../../assets/img.png';
-import Home from "../../pages/home/Home";
+import Home from "../home/Home";
 import './Reservation.css';
 import { useState } from 'react';
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import {Routes, Route, useNavigate, useLocation} from 'react-router-dom';
 
 function Reservation() {
-  const [count, setCount] = useState(0);
-  var price = 2000;
-  var distance = 520;
-  var time = 8;
+  const location = useLocation();
+  const { parkData } = location.state || {};
+
+  console.log('Park data:', parkData);
+
+  var price = parkData.price;
   const navigate = useNavigate();
   const navigateToPayment = () => {
     navigate('./../../payment/'); }
@@ -23,63 +24,61 @@ function Reservation() {
   }
 
   return (
-    <main>
-      <section className='Description'>
-        <div className='Description__value'>
+    <div>
+      <div className="profilebox">
+        <div className="profile-img"><img className="profile"/></div>
+        <div><input className="search" type="text" placeholder="Search"></input></div>
+      </div>
+
+      <div className='reservation-box'>
+        <div className="reservation-title">{parkData.name}</div>
+        <section className='Description'>
           <div className='desc-left'>
-          <img src={image}></img>
+            <img src={parkData.url_img}></img>
           </div>
           <div className='desc-right'>
-            <h3>Deskripsi</h3>
-            <p>Parkir Seni Rupa</p>
-            <h3>Location</h3>
-            <p>Jalan Ganesha</p>
+            <div className='description-title'>Deskripsi</div>
+            <p>{parkData.desc}</p>
+            <div className='description-title'>Location</div>
+            <p>{parkData.location}</p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="Reservation">
-        <h2>Arrival Time</h2>
-        <div className='reservation-time'>
-          <div className='radio'>
-            <input className='radio__input' type="radio" value="option1" name="myRadio" id="myRadio1"></input>
-            <label className='radio__label' for="myRadio1">06:00 - 06:20</label>
-            <input className='radio__input' type="radio" value="option2" name="myRadio" id="myRadio2"></input>
-            <label className='radio__label' for="myRadio2">06:20 - 06:40</label>
-            <input className='radio__input' type="radio" value="option3" name="myRadio" id="myRadio3"></input>
-            <label className='radio__label' for="myRadio3">06:40 - 07:00</label>
+        <section className="Reservation">
+          <div className="arrival-title">Arrival Time</div>
+          <div className='reservation-time'>
+            <div className='radio'>
+              <input className='radio__input' type="radio" value="option1" name="myRadio" id="myRadio1"></input>
+              <label className='radio__label' for="myRadio1">06:00 - 08:00</label>
+              <input className='radio__input' type="radio" value="option2" name="myRadio" id="myRadio2"></input>
+              <label className='radio__label' for="myRadio2">08:00 - 10:00</label>
+              <input className='radio__input' type="radio" value="option3" name="myRadio" id="myRadio3"></input>
+              <label className='radio__label' for="myRadio3">10:00 - 12:00</label>
+            </div>
           </div>
-        </div>
-        <div className='reservation-time'>
-          <div className='radio'>
-            <input className='radio__input' type="radio" value="option4" name="myRadio" id="myRadio4"></input>
-            <label className='radio__label' for="myRadio4">07:00 - 07:20</label>
-            <input className='radio__input' type="radio" value="option5" name="myRadio" id="myRadio5"></input>
-            <label className='radio__label' for="myRadio5">07:20 - 07:40</label>
-            <input className='radio__input' type="radio" value="option6" name="myRadio" id="myRadio6"></input>
-            <label className='radio__label' for="myRadio6">07:40 - 08:00</label>
+          <div className='reservation-time'>
+            <div className='radio'>
+              <input className='radio__input' type="radio" value="option4" name="myRadio" id="myRadio4"></input>
+              <label className='radio__label' for="myRadio4">12:00 - 14:00</label>
+              <input className='radio__input' type="radio" value="option5" name="myRadio" id="myRadio5"></input>
+              <label className='radio__label' for="myRadio5">14:00 - 16:00</label>
+              <input className='radio__input' type="radio" value="option6" name="myRadio" id="myRadio6"></input>
+              <label className='radio__label' for="myRadio6">16:00 - 18:00</label>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className='Details'>
-        <div className='details-attribute' style={{marginTop:"50px"}}>
-          <div>
-            <p>Price</p>
-            <p><b>Rp{price}</b></p>
+        <section className='Details'>
+          <div className='details-attribute'>
+            <div>
+              <p>Price</p>
+              <p><b>Rp{price}</b></p>
+            </div>
           </div>
-          <div>
-            <p>Distance</p>
-            <p><b>{distance}m</b></p>
-          </div>
-          <div>
-            <p>Estimated Time</p>
-            <p><b>{time} mins</b></p>
-          </div>
-        </div>
-        <button className='button' onClick={checkState}>Book Now</button>
-      </section>
-    </main>
+          <button className='button' onClick={checkState}>Book Now</button>
+        </section>
+      </div>
+    </div>
   );
 }
 

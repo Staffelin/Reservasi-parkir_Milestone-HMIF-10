@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react"
 import "./Home.css"
 import Loading from "../../components/loading/Loading"
+import NavBar from './../../components/navbar/NavBar';
+import Reservation from "../reservation/Reservation";
+import {useNavigate} from 'react-router-dom';
 
 const Home = () =>{
     const [Park,setPark]=useState([])
@@ -16,9 +19,14 @@ const Home = () =>{
     }, []);
 
     const Card = () =>{
+        const navigate = useNavigate()
+        const getClickData = (park) => {
+            navigate('/reservation', { state: { parkData: park } });
+          };
+
         return Park.map((park)=>{
             return(
-                <div className="content-card">
+                <div className="content-card" key={park.id} onClick={() => getClickData(park)}>
                     <label className="content-label">{park.name}</label>
                     <div className="content-box" style={{backgroundColor: crowd(park.car,park.bike)}}>
                         <div><img className="content-img" src={park.url_img}/></div>
@@ -44,6 +52,7 @@ const Home = () =>{
 
     return(
         <div>
+            <NavBar/>
             <div className="profilebox">
                 <div className="profile-img"><img className="profile"/></div>
                 <div><input className="search" type="text" placeholder="Search"></input></div>
@@ -52,6 +61,7 @@ const Home = () =>{
                 <Card/>
             </div>
             {isLoading && (<Loading/>)}
+            {/* <Reservation Park={Park}/> */}
         </div>
     )
 }

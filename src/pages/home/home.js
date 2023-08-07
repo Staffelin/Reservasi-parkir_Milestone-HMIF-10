@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import "./Home.css"
 import Loading from "../../components/loading/Loading"
-import { addData,editDataById } from "../../function"
 
 const Home = () =>{
     const [Park,setPark]=useState([])

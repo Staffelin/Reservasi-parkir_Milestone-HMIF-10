@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+1. Deskripsi singkat masalah dan solusi yang diangkat
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+	Masalah mencari lahan parkir yang sulit dan memakan banyak waktu merupakan permasalahan yang sering dihadapi di perkotaan, terutama dalam kota-kota dengan tingkat kepadatan penduduk yang tinggi. Keterbatasan lahan parkir yang tidak seimbang dengan jumlah kendaraan pribadi yang terus meningkat menjadi penyebab utama masalah ini. Hal ini membuat pengendara seringkali harus menghabiskan waktu yang cukup lama untuk mencari tempat parkir yang tersedia. Hal ini tidak hanya menyebabkan ketidaknyamanan, kemacetan, dan menghambat produktivitas dan efisiensi dalam kegiatan sehari-hari terutama di daerah pusat bisnis, perbelanjaan, atau fasilitas umum lainnya. Contoh pada lingkungan ITB Kampus Ganesha. Karena ketersediaan lahan parkir yang terbatas dan maraknya mahasiswa yang membawa kendaraan pribadi, masalah mencari tempat parkir menyebabkan terbuangnya waktu sehingga mahasiswa menjadi terlambat untuk memasuki kelas.
 
-## Available Scripts
+	Untuk mengatasi permasalahan ini, kelompok sepuluh ingin membuat suatu sistem reservasi parkir yang berisi informasi jumlah lahan parkir kosong dan teknologi reservasi parkir digital. Dimana sebelum mahasiswa pergi ke kampus, mereka dapat mereservasi satu lahan parkir untuk kendaraan pribadi mereka secara digital. Hal ini bertujuan untuk mengurangi jumlah mahasiswa terlambat akibat kesulitan mengetahui informasi jumlah lahan parkir kosong. 
 
-In the project directory, you can run:
+2. Requirement program dan instalasi
 
-### `npm start`
+	Kelompok 10 menyelesaikan masalah ini dengan membuat sebuah website yang berguna untuk reservasi parkir secara online. Website ini harus menunjukkan jumlah lahan yang tersisa (kosong) dan memiliki fitur dimana pengguna dapat langsung mereservasi lahan tersebut sebelum ia berpergian ke suatu tempat. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+	Untuk proses instalasi, kelompok kami membuat website ini secara komunal. Proses instalasi adalah sebagai berikut.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Exract file zip
+2. Buka terminal
+3. Ketik cd Reservasi-parkir_Milestone-HMIF-10 (Ke lokasi file yang sudah di-extract)
+4. Instalasi package -> npm install
+5. Run di http://localhost:3000/ -> npm run start
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Cara menggunakan program
 
-### `npm run build`
+1. Buka website reservasi parkir
+2. Login -> input email dan password
+3. Register -> input nama, email, nomor hp, dan password
+4. Pilih daerah parkir
+5. Checkout
+6. Akan muncul QR code untuk pembayaran reservasi parkir
+7. Jumlah tempat parkir akan berkurang 1
+8. Keluar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Identitas pembuat beserta kontribusinya
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Kerlyn Deslia Andeskar (19622005) = Powerpoint
+- Farel Winalda (19622033) = Homepage - Parkspot - Navigation Bar - Source code
+- Agil Fadillah Sabri (19622103) = Register
+- Zachary Samuel Tobing (19622151) = Metode pembayaran
+- Muhammad Dava Fathurahman (19622160) = Admin - Source code
+- Daffa Ramadhan Elengi (19622161) = Booking Parkir - Source code
+- Muhammad Raihan Ariffianto (19622174)  = Register - Source code
+- Eleanor Cordelia (19622182) = Pembuat ReadME - Powerpoint
+- Marvin Scifo Yehezkiel Hutahaean (19622184) = Homepage - Parkspot - Navigation bar - Source code
+- Matthew Nicholas Gunawan (19622211) = Powerpoint
+- Melissa Trenggono (19622237) = Powerpoint
+- Ahmad Rafi Maliki (19622252) = QR - Source code
+- Nicholas Raymond Sihite (19622298) = Login - Source code

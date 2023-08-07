@@ -1,12 +1,26 @@
-import image from './../../assets/img.png'
+import image from './../../assets/img.png';
+import Home from "../../pages/home/Home";
 import './Reservation.css';
 import { useState } from 'react';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 function Reservation() {
   const [count, setCount] = useState(0);
   var price = 2000;
   var distance = 520;
   var time = 8;
+  const navigate = useNavigate();
+  const navigateToPayment = () => {
+    navigate('./../../payment/'); }
+  function checkState() {
+    if ((document.getElementById('myRadio1').checked)||(document.getElementById('myRadio2').checked)||(document.getElementById('myRadio2').checked)
+    ||(document.getElementById('myRadio3').checked)||(document.getElementById('myRadio4').checked)||(document.getElementById('myRadio5').checked)
+    ||(document.getElementById('myRadio6').checked)) {
+        navigateToPayment()
+    } else {
+        // call other function
+    }
+  }
 
   return (
     <main>
@@ -17,7 +31,7 @@ function Reservation() {
           </div>
           <div className='desc-right'>
             <h3>Deskripsi</h3>
-            <p>Lahan parkir di ITB yang dekat dengan gedung FSRD</p>
+            <p>Parkir Seni Rupa</p>
             <h3>Location</h3>
             <p>Jalan Ganesha</p>
           </div>
@@ -49,7 +63,7 @@ function Reservation() {
       </section>
 
       <section className='Details'>
-        <div className='details-attribute'>
+        <div className='details-attribute' style={{marginTop:"50px"}}>
           <div>
             <p>Price</p>
             <p><b>Rp{price}</b></p>
@@ -63,7 +77,7 @@ function Reservation() {
             <p><b>{time} mins</b></p>
           </div>
         </div>
-        <button className='button'>Book Now</button>
+        <button className='button' onClick={checkState}>Book Now</button>
       </section>
     </main>
   );

@@ -39,3 +39,6 @@ Untuk proses instalasi, kelompok kami membuat website ini secara komunal. Proses
 - Melissa Trenggono (19622237) = Mengerjakan PPT
 - Ahmad Rafi Maliki (19622252) = QR - Source code
 - Nicholas Raymond Sihite (19622298) = Login - Source code
+  
+**Link Lampiran**  
+1. Link Lampiran Laporan -> https://itbdsti-my.sharepoint.com/:w:/g/personal/13522110_mahasiswa_itb_ac_id/EQiOKouGidRPjrN0CIReKMwBpiCZaO3InfTOJypDbMNHEA?e=V728Bf

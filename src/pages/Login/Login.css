@@ -1,0 +1,30 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 100px
+}
+
+.start {
+    font-size: 15px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 100px
+}

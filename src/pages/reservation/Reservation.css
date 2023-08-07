@@ -6,7 +6,7 @@
 .Description {
   display: flex;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .Description__value {
@@ -29,8 +29,8 @@
 .Reservation {
   align-items: center;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .reservation-time {
@@ -39,7 +39,7 @@
 
 .Details {
   position: fixed;
-  bottom: 0;
+  bottom: 50px;
   width: 100%;
   padding: 20px 0;
 }

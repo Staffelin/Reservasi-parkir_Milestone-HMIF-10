@@ -68,6 +68,15 @@ input:focus{
     transform: translateY(-90%);
 }
 
+.login-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+}
+
 .submit-button{
     margin-top: 63px;
     display: flex;

@@ -26,12 +26,6 @@
     line-height: normal;
 }
 
-.logpass{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .input input{
     border-radius: 10px;
     border: 1px solid #8B8B8B;
@@ -78,6 +72,15 @@ input[type=number] {
     transform: translateY(-90%);
 }
 
+.register-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+}
+
 .submit-button{
     margin-top: 63px;
     display: flex;
@@ -96,7 +99,12 @@ input[type=number] {
     line-height: normal;
 }
 
+.submit-button:hover{
+    box-shadow: 0px 4px 4px 0px rgba(255, 0, 0, 0.25);
+}
+
 .or{
+    margin-top: 63px; ;
     display: flex;
     justify-content: center;
     align-items: center;

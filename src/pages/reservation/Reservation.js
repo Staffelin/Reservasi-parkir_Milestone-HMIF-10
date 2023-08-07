@@ -75,7 +75,7 @@ function Reservation() {
               <p><b>Rp{price}</b></p>
             </div>
           </div>
-          <button className='button' onClick={checkState}>Book Now</button>
+          <button className='book-button' onClick={checkState}>Book Now</button>
         </section>
       </div>
     </div>

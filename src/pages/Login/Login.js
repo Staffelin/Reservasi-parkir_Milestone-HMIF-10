@@ -20,7 +20,7 @@ function Login() {
                 <div className="input">
                     <input type="password" required placeholder="Enter password"/>
                 </div>
-                <div>
+                <div className='login-submit'>
                     <button type="submit" className='submit-button'>Login</button>
                 </div>
                 <div className='or'>

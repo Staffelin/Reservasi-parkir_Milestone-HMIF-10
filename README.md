@@ -1,17 +1,19 @@
 Deskripsi singkat masalah dan solusi yang diangkat
 	
- 	Masalah mencari lahan parkir yang sulit dan memakan banyak waktu merupakan permasalahan yang sering dihadapi di perkotaan, terutama dalam kota-kota dengan tingkat kepadatan penduduk yang tinggi. Keterbatasan lahan parkir yang tidak seimbang dengan jumlah kendaraan pribadi yang terus meningkat menjadi penyebab utama masalah ini. Hal ini membuat pengendara seringkali harus menghabiskan waktu yang cukup lama untuk mencari tempat parkir yang tersedia. Hal ini tidak hanya menyebabkan ketidaknyamanan, kemacetan, dan menghambat produktivitas dan efisiensi dalam kegiatan sehari-hari terutama di daerah pusat bisnis, perbelanjaan, atau fasilitas umum lainnya. Contoh pada lingkungan ITB Kampus Ganesha. Karena ketersediaan lahan parkir yang terbatas dan maraknya mahasiswa yang membawa kendaraan pribadi, masalah mencari tempat parkir menyebabkan terbuangnya waktu sehingga mahasiswa menjadi terlambat untuk memasuki kelas.
-	Untuk mengatasi permasalahan ini, kelompok sepuluh ingin membuat suatu sistem reservasi parkir yang berisi informasi jumlah lahan parkir kosong dan teknologi reservasi parkir digital. Dimana sebelum mahasiswa pergi ke kampus, mereka dapat mereservasi satu lahan parkir untuk kendaraan pribadi mereka secara digital. Hal ini bertujuan untuk mengurangi jumlah mahasiswa terlambat akibat kesulitan mengetahui informasi jumlah lahan parkir kosong. 
+Permasalahan menemukan lahan parkir yang masih kosong dapat berdampak pada terbuangnya banyak waktu. Hal ini merupakan permasalahan yang sering dihadapi masyarakat di daerah perkotaan, terutama di kota-kota dengan tingkat kepadatan penduduk yang tinggi. Ketersediaan lahan parkir yang tak diimbangi dengan jumlah kendaraan pribadi yang terus meningkat menjadi penyebab utama masalah ini. Hal ini membuat pengendara seringkali harus menghabiskan waktu cukup lama untuk mencari tempat parkir yang tersedia. Hal ini menyebabkan ketidaknyamanan, menimbulkan kemacetan, dan menghambat produktivitas & efisiensi dalam kegiatan sehari-hari terutama di daerah pusat bisnis, perbelanjaan, atau fasilitas umum lainnya. Contoh nyatanya ialah pada lingkungan kampus ITB Ganesha. Karena ketersediaan lahan parkir yang terbatas dan maraknya mahasiswa yang membawa kendaraan pribadi, masalah mencari tempat parkir menyebabkan terbuangnya waktu sehingga mahasiswa menjadi terlambat untuk memasuki kelas.
+	
+Untuk mengatasi permasalahan ini, kami dari kelompok sepuluh berkeinginan membuat suatu sistem reservasi parkir yang berisi tentang informasi jumlah lahan parkir yang masih tersedia atau yang masih kosong beserta teknologi reservasi parkir digital. Dengan adanya sistem ini, sebelum mahasiswa pergi ke kampus, mereka dapat mereservasi dari jarak jauh satu lahan parkir yang masih tersedia untuk kendaraan pribadi mereka. Hal ini bertujuan untuk mengurangi jumlah mahasiswa yang terlambat sebagai akibat dari sulitnya mengetahui informasi jumlah lahan parkir yang masih tersedia atau yang masih kosong. 
 
 Requirement program dan instalasi
 	
- 	Kelompok 10 menyelesaikan masalah ini dengan membuat sebuah website yang berguna untuk reservasi parkir secara online. Website ini harus menunjukkan jumlah lahan yang tersisa (kosong) dan memiliki fitur dimana pengguna dapat langsung mereservasi lahan tersebut sebelum ia berpergian ke suatu tempat. 
-	Untuk proses instalasi, kelompok kami membuat website ini secara komunal. Proses instalasi adalah sebagai berikut.
-		1. Exract file zip
-		2. Buka terminal
-		3. Ketik cd Reservasi-parkir_Milestone-HMIF-10 (Ke lokasi file yang sudah di-extract)
-		4. Instalasi package -> npm install
-		5. Run di http://localhost:3000/ -> npm run start
+Kelompok 10 menyelesaikan masalah ini dengan membuat sebuah website yang berguna untuk reservasi parkir secara online. Website ini harus menunjukkan jumlah lahan yang tersisa (kosong) dan memiliki fitur dimana pengguna dapat langsung mereservasi lahan tersebut sebelum ia berpergian ke suatu tempat. 
+
+Untuk proses instalasi, kelompok kami membuat website ini secara komunal. Proses instalasi adalah sebagai berikut.
+1. Exract file zip
+2. Buka terminal
+3. Ketik cd Reservasi-parkir_Milestone-HMIF-10 (Ke lokasi file yang sudah di-extract)
+4. Instalasi package -> npm install
+5. Run di http://localhost:3000/ -> npm run start
 
 Cara menggunakan program
 1. Buka website reservasi parkir
@@ -24,7 +26,7 @@ Cara menggunakan program
 8. Keluar
 
 Identitas pembuat beserta kontribusinya
-- Kerlyn Deslia Andeskar (19622005) = Powerpoint
+- Kerlyn Deslia Andeskar (19622005) = Powerpoint - membantu memperbaiki ReadME bagian deskripsi singkat masalah dan solusi
 - Farel Winalda (19622033) = Homepage - Parkspot - Navigation Bar - Source code
 - Agil Fadillah Sabri (19622103) = Register
 - Zachary Samuel Tobing (19622151) = Metode pembayaran

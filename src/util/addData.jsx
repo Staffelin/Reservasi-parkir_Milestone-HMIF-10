@@ -1,7 +1,6 @@
 import axios from "axios";
 
 function addData(newData,url) {
-    console.log(newData, url)
     axios.post(url, newData)
         .then(response => {
             console.log(response.data.message); // Response message from the API

@@ -3,9 +3,12 @@ import "./Home.css"
 import Loading from "../../components/loading/Loading"
 import NavBar from './../../components/navbar/NavBar';
 import Reservation from "../reservation/Reservation";
-import {useNavigate} from 'react-router-dom';
+import {useNavigate,useLocation} from 'react-router-dom';
 
 const Home = () =>{
+    const location = useLocation();
+    const { username } = location.state || {}
+
     const [Park,setPark]=useState([])
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
@@ -18,6 +21,7 @@ const Home = () =>{
             .catch(error => console.error(error));
     }, []);
 
+    if (username){
     const Card = () =>{
         const navigate = useNavigate()
         const getClickData = (park) => {
@@ -64,6 +68,10 @@ const Home = () =>{
             {/* <Reservation Park={Park}/> */}
         </div>
     )
+    }
+    else{
+        window.location.href="/login"
+    }
 }
 
 export default Home

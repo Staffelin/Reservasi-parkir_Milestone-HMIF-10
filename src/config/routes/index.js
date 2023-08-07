@@ -1,6 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+<<<<<<< Updated upstream
 import Home from "../../pages/home/Home";
+=======
+import Home from "./../../pages/home/home";
+>>>>>>> Stashed changes
 import { Admin, Reservation } from "../../pages";
 import NavBar from './../../components/navbar/NavBar';
 
